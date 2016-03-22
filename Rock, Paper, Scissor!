@@ -1,0 +1,31 @@
+
+
+user1 = raw_input("Please enter your name:")
+user2 = raw_input("And also yours:")
+ans1 = raw_input("%s, Do you want to chose rock, paper or scissor?  " % user1)
+ans2 = raw_input("%s, Do you wan to chose rock, paper or scissor?  " % user2)
+
+def comp(u1, u2):
+
+    if u1 == u2:
+        print("Its is a tie!")
+    elif u1 == "rock":
+            if u2 == "scissor":
+             print("u1 is the winner")
+            else:
+                print("u2 is the winner")
+    elif u1 == "scissor":
+        if u2 == "paper":
+            print("u1 is the winner")
+        else:
+            print("u2 is the winner")
+    elif u1 == "rock":
+        if u2 == "paper":
+          print("u2 is the winner")
+        else:
+          print("u1 is the winner")
+    else:
+        print("Invalid input, please try again!")
+        
+        
+print(comp(ans1, ans2))
