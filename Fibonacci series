@@ -1,0 +1,10 @@
+def fibo(n)
+ a, b = 1,1
+ new_list = [1]
+ 
+ for i in range(1, n - 1)
+  a, b = b, a + b
+  new_list.append(a)
+print new_list
+ 
+ # short and sweet code for fibonacci series, where it takes in the input a number and gives you that many numbers in the series
